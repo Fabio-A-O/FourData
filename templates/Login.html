@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cygus Securit</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/StyleSheet.css')}}">
+        <link rel="shortcut icon" type="imagex/png" href="{{url_for('static', filename='Images/LogoForD.jpeg')}}">
+    </head>
+    <body>
+        <div class="cabecariologin">
+            <img src="{{url_for('static', filename='Images/LogoForD.jpeg')}}" style="width:auto; height: 80px;">
+            <h1></h1>
+        </div>
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                 <h1> {{ messages }} </h1>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}<br>
+
+        <!--Team-->
+        <div class="main">
+            <div class="telalogin">
+                <div class="caixa-login">
+
+                    <!--formulario de login-->
+                    <form class="formulariologin" method="POST">
+                        <span class="span-titulo">
+                            Entrar
+                        </span>
+    
+                        <div class="login-input validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                            <input class="informacoes-input" type="text" name="username" placeholder="E-mail/login">
+                            <span class="foco-input"></span>
+                            <span class="simbolo-input">
+                            </span>
+                        </div>
+    
+                        <div class="login-input validate-input" data-validate = "Password is required">
+                            <input class="informacoes-input" type="password" name="password" placeholder="Senha">
+                            <span class="foco-input"></span>
+                            <span class="simbolo-input">
+                            </span>
+                        </div>
+                        
+                        <div class="botao-container">
+                            <button class="botão-login">
+                                Login
+                            </button>
+                        </div>
+                        <br><br>
+                        <div class="text-center p-t-136">
+                            É novo por aqui?
+                            <a class="txt2" href="mailto:atendimentofourdata@gmail.com?subject=Hello%20again"><br>
+                                Entre em contato e obtenha agora mesmo uma conta!
+                            </a>
+                        </div>
+                    </form>
+
+                    <!--carrossel-->
+                    <div class="logincarrocel" data-tilt>
+                        <!-- carrossel slideshow -->
+                    <div class="slidershow-container">
+                        <div class= "mySlides fade">
+                        <img src="{{url_for('static', filename='Images/ImgOficina1.jpg')}}" style="width:auto; height: 50%; margin-top: -10%;">
+                        </div>
+                        <div class= "mySlides fade">
+                        <img src="{{url_for('static', filename='Images/ImgOficina1.jpg')}}" style="width:auto; height: 50%; margin-top: -10%;"> 
+                        </div>
+                        <!--butoes de ir para o lado
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+                    </div>
+                       
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+              var i;
+                var slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+            }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 6000); // Change image every 8 seconds
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+     <!--<link rel="stylesheet" type="text/css" href="CSS/StyleSheetMain.css"> -->
+      <link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='CSS/StyleSheetMain.css')}}">
+      <link rel="shortcut icon" type="imagex/png" href="{{url_for('static', filename='Images/LogoForD.jpeg')}}">
+   </head>
+  <body>
+    <!-- Menu Flutuante -->
+    <div class="cabecarioInicio">
+      <img src="{{url_for('static', filename='Images/LogoForD.jpeg')}}" style="width:auto; height: 80px;">
+      <img src="{{url_for('static', filename='Images/LogoOficina.png')}}" style="width:auto; height: 80px;">
+    </div>
+      <!--botões do cabeçario-->
+        <div class="menususpenso">
+          <button class="menubtn">MENU</button>
+          <div class="menususpenso-child">
+            <a href="Login">Logout</a>
+            <a href="#contato">Contato</a>
+          </div>
+        </div>   
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+          <h1> {{ messages }} </h1>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}<br>
+  <div>
+        <!-- Pagina -->
+      <section id="Servicos">
+        <!-- Servicos -->
+        <div>
+          <br>
+          <p class="texto6"><strong># Dicas de segurança!</strong><br></p>
+          <p class="textoS">• Como boa prática recomendamos nunca ser compartilhado senhas pessoais.<br> 
+          • Não realize o upload dos arquivos com planilhas abertas!<br>
+          • Nada de preguiça na hora de preencher as OS quanto mais informações estiverem disponiveis melhor sera o retorno. <br>
+          <br><strong>E lembre-se quando se diz respeito a seus mostradores, todo resultado depende de sua carga de dado, somente assim terá Informações reais!</strong></p><br>
+      </section>
+        <!-- Cadastrar novas senhas e segredos -->
+      <section id="Cofre">
+        <div class="tabela">
+          <H2>Carregar Arquivos:</H2>
+          <div>
+            <Form method="POST" >
+              <label>Local de Armazenamento dos arquivos:</label><br>
+              <input type="text" name="Director" placeholder="C:\Arquivos"><br>
+              <label>Nome do usuário:</label><br>
+              <input type="text" name="Name" placeholder="José Silva"><br>
+              <label>Data:</label><br>
+              <input type="text" name="Date" placeholder="{DD/MM/YYYY}"><br>
+              <input class="button" type="submit" name="MS_SEC" value="CARREGAR">
+            </Form>
+          </div><br>           
+        <div>
+<!-- Contato -->
+      </section>
+        <session id="contato">
+          <p class="texto5" ><strong>Contato</strong>  <br> </p>
+          
+    <session id="contato">
+        <section class="contact-section bg-black">
+          <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5">
+              <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                 <div class="card-body text-center">
+                  <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                  <h4 class="text-uppercase m-0">Endereço</h4>
+                  <hr class="my-4 mx-auto" />
+                  <div class="small text-black-50">4923 São Paulo, São Paulo SP</div>
+                </div>
+              </div>
+            </div>
+              <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                  <div class="card-body text-center">
+                  <i class="fas fa-envelope text-primary mb-2"></i>
+                  <h4 class="text-uppercase m-0">E-mail</h4>
+                  <hr class="my-4 mx-auto" />
+                  <div class="small text-black-50" href="mailto:atendimentofourdata@gmail.com?subject=Hello%20again">atendimentofourdata@gmail.com</div>
+                </div>
+              </div>
+            </div>
+              <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                  <div class="card-body text-center">
+                  <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                  <h4 class="text-uppercase m-0">Telefone</h4>
+                  <hr class="my-4 mx-auto" />
+                  <div class="small text-black-50">+55 (11)9 995096433</div>
+                </div>
+              </div>
+            </div>
+        </section>
+    </session>
+
+  </div>
+
+</body>
+</html>

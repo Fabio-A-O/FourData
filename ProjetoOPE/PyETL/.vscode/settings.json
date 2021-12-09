@@ -1,0 +1,7 @@
+{
+    "python.analysis.extraPaths": [
+        "./Bussines",
+        "./Model",
+        "./DataAcess"
+    ]
+}

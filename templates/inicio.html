@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bem-vindo ao Cygus</title>
+      <!--   <link rel="stylesheet" type="text/css" href="StyleSheetInicio.css">-->
+       <link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='CSS/StyleSheetInicio.css')}}"> 
+       <link rel="shortcut icon" type="imagex/png" href="{{url_for('static', filename='Images/LogoForD.jpeg')}}">
+    </head>
+        <body> 
+            <div class= "background">
+                <div class="cabecarioInicio">
+                 <img src="{{url_for('static', filename='Images/LogoForD.jpeg')}}" style="width:auto; height: 80px;">
+                   
+                </div>
+                <!--botões do cabeçario-->
+                <div class="menususpenso">
+                    <button class="menubtn">MENU</button>
+                    <div class="menususpenso-child">
+                        <a href="Login">Login</a>
+                        <a href="#plataforma">Como funciona</a>
+                        <a href="#tecnologias">Escalabilidade</a>
+                        <a href="#contato">Contato</a>
+                     </div>
+                </div>   
+                <div>
+                    <p class= "texto1"><strong>Mais do que auxiliar,<br> queremos aprimorar seu negócio!</strong> </p> <br>
+                    <p class="texto2" >Usando tecnologia de análise de dados, para extração do seu melhor potencial. <br></p>
+                    
+                    <session id="plataforma">
+                    <p class="texto3" ><strong>Como funciona a plataforma?</strong>  <br> </p>
+                        <p class="texto4" >  O ideal de nosso método combina elementos de alta escalabilidade para a análise dos dados de seu negócio, com potencial adaptativo.
+                            <br> Realizamos a coleta destes dados com desenvolvimento customizado de uma ETL exclusiva, para ajudar a estruturação sólida em base dos dados de seu negócio.  
+                            <br> Através da criação de relatórios, construindo dashboards para entender seu case, entendendo o momento e planejando seu futuro!                            
+                    </p>
+                    </session>
+                </div>
+                    <div><p class="texto5" ><strong>Contato</strong></p></div>
+                    <!-- Contato -->
+                    <session id="contato">
+                    <section class="contact-section bg-black">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Endereço</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">4923 São Paulo, São Paulo SP</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">E-mail</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50"> <a href="mailto:atendimentofourdata@gmail.com?subject=Hello" >atendimentofourdata@gmail.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Telefone</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">+55 (11)9 995096433</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </session>
+
+     </div>
+
+        </body>
+</html>

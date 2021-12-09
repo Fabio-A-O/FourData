@@ -1,0 +1,285 @@
+div.cabecarioInicio{
+    max-height: 10%;
+    display: flex;
+    justify-content: left;
+  }
+  
+  .botao-guide {
+      text-align: center;
+      font-size: 30;
+      color: #030335b0;
+      margin-left: 35%;
+      font-family: 'Agency FB';
+      border-radius: 30%;
+    
+  }
+  
+  .menubtn {
+    background-color: rgb(10, 48, 63);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:30px;
+  }
+  .menubtn:hover {
+    background-color: rgb(140, 197, 230);
+    }
+  .menususpenso {
+    
+    display:inline-block;
+    float:right;
+    flex-wrap: wrap; 
+    justify-content: right; 
+    flex-direction: column; 
+    text-align: right; 
+    margin-top: -100px; 
+  }
+  .menususpenso-child {
+    display: none;
+    background-color: rgb(25, 104, 150);
+    min-width: 200px;
+  }
+  .menususpenso-child a {
+    color: white;
+    font-family:'Agency FB';
+    text-align: left;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+  }
+  .menususpenso:hover .menususpenso-child {
+    display: block;
+  }
+  
+  p.texto1{
+    font-family: 'Agency FB';
+    font-size: 70px;
+    color:rgb(15, 70, 102);
+  
+  } 
+  
+  
+  p.texto2{
+    font-family: 'Agency FB';
+    font-size: 30px;
+    color:rgb(25, 104, 150);
+    margin-top: -25px;
+  }
+  
+  p.texto3{
+    font-family: 'Agency FB';
+    font-size: 50px;
+    color:rgb(17, 72, 104);
+  }
+  
+  p.texto4{
+    font-family: 'Agency FB';
+    font-size: 30px;
+    color:rgb(25, 104, 150);
+    margin-top: -25px;
+  }
+  
+  p.texto5{
+    font-family: 'Agency FB';
+    font-size: 50px;
+    color:rgb(25, 104, 150);
+    text-align: center;
+    margin-right: 22px;
+  }
+  
+  .background{
+    size: relative;
+    background-color: whitesmoke;
+  }
+  
+  .imagem1{
+    max-height: 20%;
+    display: flex;
+    justify-content: right;
+    
+  }
+  
+  
+  
+  /contato configurações/
+  
+  .contact-section {
+    padding-top: 15px;
+  }
+  .contact-section .card {
+    border: 0;
+    border-bottom: 0.25rem solid #64a19d;
+  }
+  .contact-section .card h4, .contact-section .card .h4 {
+    font-size: 15px;
+    font-family: "Agency FB";
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+  }
+  .contact-section .card hr {
+    border-color: #64a19d;
+    border-width: 0.1rem;
+    width: 6rem;
+  }
+  .contact-section .social {
+    margin-top: 5rem;
+  }
+  .contact-section .social a {
+    text-align: center;
+    height: 3rem;
+    width: 3rem;
+    background: rgba(25, 104, 150);
+    border-radius: 100%;
+    line-height: 3rem;
+    color: rgba(255, 255, 255, 0.3);
+  }
+  .contact-section .social a:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .contact-section .social a:active {
+    color: #fff;
+  }
+  
+  .container,
+  .container-fluid,
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    width: 80%;
+    padding-right: var(--bs-gutter-x, 0.55rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .bg-black {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
+  }
+  
+  .px-4 {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+  }
+  
+  .px-lg-5 {
+    padding-right: 3rem !important;
+    padding-left: 3rem !important;
+  }
+  
+  .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+  }
+  
+  .g-4,
+  .gx-4 {
+    --bs-gutter-x: 1.5rem;
+  }
+  
+  .g-lg-5,
+  .gx-lg-5 {
+    --bs-gutter-x: 3rem;
+  }
+  
+  .col-md-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+  
+  .mb-3 {
+    margin-bottom: 1rem !important;
+  }
+  
+  .mb-md-0 {
+    margin-bottom: 0 !important;
+  }
+  
+  .card {
+    position: relative;
+    display:block;
+    flex-direction: column;
+    margin-right: 30px;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: white;
+    background-clip: border-box;
+    border: 1px solid rgba(91, 11, 219, 0.125);
+    border-radius: 0.30rem;
+  }
+  
+  .py-4 {
+    padding-top: 1.3rem !important;
+    padding-bottom: 1.3rem !important;
+  }
+  
+  .h-100 {
+    height: 100% !important;
+  }
+  
+  .card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+  }
+  
+  .text-center {
+    text-align: center !important;
+  }
+  
+  .text-uppercase {
+    text-transform: uppercase !important;
+  }
+  
+  .m-0 {
+    margin: 0 !important;
+  }
+  
+  .my-4 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+  
+  small, .small {
+    font-size: 16px;
+  }
+  
+  .text-black-50 {
+    --bs-text-opacity: 1;
+    color: rgba(25, 104, 150,) !important;
+  }
+  
+  .d-flex {
+    display: flex !important;
+  }
+  
+  .justify-content-center {
+    justify-content: center !important;
+  }
+  
+  .mx-2 {
+    margin-right: 0.5rem !important;
+    margin-left: 0.5rem !important;
+  }
+  
+  /* rtl:end:remove */
+  .text-primary {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  }
+  
+  .mb-2 {
+    margin-bottom: 0.5rem !important;
+  }
