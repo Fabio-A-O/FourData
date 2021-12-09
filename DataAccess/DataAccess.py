@@ -105,7 +105,7 @@ class DataFunctions:
                         VALUES(?,?,getdate())
                 """
             print(Erro[1])
-            parametros = [Namexls,Erro[1]]
+            parametros = [Namexls,Erro.ARGS[1]]
             cursor.execute(stringquery,parametros) 
             the_result = cursor.fetchone()[0]
             cursor.commit()
@@ -132,7 +132,7 @@ class DataFunctions:
                 for Produto in Dados[5]:
                     _Produto = DataFunctions.RegisterItem(Produto,_OS[1])
             elif _OS[0] == False:
-                DataFunctions.RegisterFalhaLeitura(Dados[6],_OS[1]);
+                DataFunctions.RegisterFalhaLeitura(Dados[6],_OS[1])
                 return(False)
             return(True)
         

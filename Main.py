@@ -118,18 +118,8 @@ def Main ():
             if id != '':
                 ListSecret = True #Process.SM.SM_SECRETS_BY_ID(id)
                 if ListSecret[0] :
-                    Values = []
-                    for itens in ListSecret[1]:
-                        segredo = itens['secret_data']
-
-                        date = Secret(
-                        ID = itens['id'],
-                        DESC = itens['description'],
-                        PASS = segredo['password']+' - '+segredo['username'],
-                        NAME = itens['name']
-                    )
-                    Values.append(date)
-                    return render_template('ListSecrets.html', secrets = Values )
+                    flash("Arquivos carregados, prontos para visualização!")
+                    return redirect(url_for('Main'))
                 else:
                     flash(ListSecret[1])
                     return redirect(url_for('Main'))
@@ -162,4 +152,4 @@ def Main ():
 # area nuclear
 
 if __name__ == '__main__' : 
-   app.run (debug = True)
+   app.run (debug = False)
